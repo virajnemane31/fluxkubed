@@ -3,10 +3,10 @@ kind: PatchTransformer
 metadata:
   name: kubed-deploy
 target:
-  group: kustomize.toolkit.fluxcd.io
-  kind: Kustomization
-  name: kubed-deploy
-  namespace: flux-system
+  group: helm.toolkit.fluxcd.io
+  kind: HelmRelease
+  name: kubed
+  namespace: kubed
 patch: |-
   - op: replace
     path: /spec/values/config/clusterName
