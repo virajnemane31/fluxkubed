@@ -10,8 +10,8 @@ target:
 patch: |-
   - op: add
     path: /spec/patches/-
-    value: |
-      - patch: |-
+    value:
+        patch: |-
         - op: replace
           path: /spec/values/config/clusterName
           value: gke-pe-dev
