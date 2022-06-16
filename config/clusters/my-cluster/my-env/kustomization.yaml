@@ -3,4 +3,5 @@ kind: Kustomization
 resources:
 - ../../../base/applications/kubed/fluxv2/
 - flux-system/
-- transformers/
+transformers:
+- transformers/kubed.yaml
