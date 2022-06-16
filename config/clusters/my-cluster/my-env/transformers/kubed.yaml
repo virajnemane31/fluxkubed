@@ -9,7 +9,7 @@ target:
   namespace: flux-system
 patch: |-
   - op: add
-    path: /spec/patches/
+    path: /spec/patches/-
     value:
         patch: |-
         - op: replace
