@@ -1,0 +1,13 @@
+apiVersion: builtin
+kind: PatchTransformer
+metadata:
+  name: kubed-deploy
+target:
+  group: helm.toolkit.fluxcd.io
+  kind: HelmRelease
+  name: kubed
+  namespace: kubed
+patch: |-
+  - op: replace
+    path: /spec/values/config/clusterName
+    value: gke-pe-dev
