@@ -8,7 +8,7 @@ target:
   name: kubed-deploy
   namespace: flux-system
 patch: |-
-  - op: replace
+  - op: add
     path: /spec/patches/
     value: |
       - patch: |
