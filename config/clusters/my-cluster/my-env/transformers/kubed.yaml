@@ -17,10 +17,7 @@ patch: |-
         name: kubed
         namespace: kubed
       patch: |-
-        - op: add
-          path: /spec/
-          value:
-            values:
-              config:
-                clusterName: gke-pe-dev
+        - op: replace
+          path: /spec/values/config/clusterName
+          value: gke-pe-dev
 
