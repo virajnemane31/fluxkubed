@@ -25,5 +25,5 @@ spec:
   interval: 5m
   values:
     config:
-      clusterName: some-name
+      clusterName: []
       
