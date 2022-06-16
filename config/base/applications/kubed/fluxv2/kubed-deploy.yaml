@@ -4,8 +4,8 @@ metadata:
   name: kubed-deploy
   namespace: flux-system
 spec:
-  interval: 1m
-  path: ./config/base/applications/kubed/fluxv2/
+  interval: 10m0s
+  path: ./config/base/applications/kubed/fluxv2/deploy
   prune: true
   sourceRef:
     kind: GitRepository
