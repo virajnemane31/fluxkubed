@@ -12,12 +12,15 @@ patch: |-
     path: /spec/patches/-
     value:
       target:
-        kind: HelmRelease
         group: helm.toolkit.fluxcd.io
+        kind: HelmRelease
         name: kubed
         namespace: kubed
       patch: |-
-      - op: replace
-        path: /spec/values/config/clusterName
-        value: gke-pe-dev
+        - op: add
+          path: /spec/
+          value:
+            values:
+              config:
+                clusterName: gke-pe-dev
 
