@@ -3,11 +3,20 @@ kind: PatchTransformer
 metadata:
   name: kubed-deploy
 target:
-  group: helm.toolkit.fluxcd.io
-  kind: HelmRelease
-  name: kubed
-  namespace: kubed
+  group: kustomize.toolkit.fluxcd.io
+  kind: Kustomization
+  name: kubed-deploy
+  namespace: flux-system
 patch: |-
   - op: replace
-    path: /spec/values/config/clusterName
-    value: gke-pe-dev
+    path: /spec/patches/
+    value: |
+      - patch: |
+        - op: replace
+          path: /spec/values/config/clusterName
+          value: gke-pe-dev
+        target:
+          kind: HelmRelease
+          group: helm.toolkit.fluxcd.io
+          name: kubed
+          namespace: kubed
