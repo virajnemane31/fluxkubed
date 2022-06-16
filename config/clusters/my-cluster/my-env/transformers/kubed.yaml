@@ -8,15 +8,6 @@ target:
   name: kubed-deploy
   namespace: flux-system
 patch: |-
-  - op: add
-    path: /spec/patches/-
-    value:
-      target:
-        group: helm.toolkit.fluxcd.io
-        kind: HelmRelease
-        name: kubed
-        namespace: kubed
-      patch: |-
-        - op: replace
-          path: /spec/
-          value: 
+  - op: replace
+    path: /spec/values/config/cLusterName
+    value: gke-pe-dev
