@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - ../../../base/applications/kubed/fluxv2/
 - ../../../base/applications/cert-manager/fluxv2
+- ../../../base/applications/cert-manager-issuers/fluxv2
 - flux-system/
 transformers:
 - transformers/kubed.yaml
