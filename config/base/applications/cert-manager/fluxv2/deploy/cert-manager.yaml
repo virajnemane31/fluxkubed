@@ -22,7 +22,7 @@ spec:
         kind: HelmRepository
         name: jetstack
         namespace: cert-manager
-      version: 1.8.1
+      version: 1.8.0
   interval: 5m0s
   values:
     installCRDs: true
