@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./config/base/applications/fluxv2/argocd/deploy
+  path: ./config/base/applications/argocd/fluxv2/deploy
   prune: true
   sourceRef:
     kind: GitRepository
