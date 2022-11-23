@@ -16,10 +16,10 @@ spec:
   releaseName: argocd
   chart:
     spec:
-      chart: argo-cd
+      chart: argo
       sourceRef:
         kind: HelmRepository
-        name: argo
+        name: argo-cd
         namespace: argocd
       version: 5.13.0
   interval: 5m
