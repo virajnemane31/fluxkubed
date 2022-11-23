@@ -23,4 +23,7 @@ spec:
         namespace: argocd
       version: 5.0.0
   interval: 5m
-
+  values:
+    server:
+      service:
+        type: NodePort
