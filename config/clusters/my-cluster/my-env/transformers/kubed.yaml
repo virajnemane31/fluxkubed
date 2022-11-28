@@ -20,4 +20,16 @@ patch: |-
         - op: replace
           path: /spec/values/config/clusterName
           value: gke-pe-dev
+  - op: add
+    path: /spec/patches/-
+    value:
+      target:
+        group: helm.toolkit.fluxcd.io
+        kind: HelmRelease
+        name: kubed
+        namespace: kubed
+      patch: |-
+        - op: replace
+          path: /spec/chart/spec/version
+          value: v0.13.2
 

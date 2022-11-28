@@ -21,7 +21,7 @@ spec:
         kind: HelmRepository
         name: kubed
         namespace: kubed
-      version: v0.13.2
+      version: some-version
   interval: 5m
   values:
     config:
