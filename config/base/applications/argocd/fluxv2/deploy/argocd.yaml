@@ -21,7 +21,7 @@ spec:
         kind: HelmRepository
         name: argocd
         namespace: argocd
-      version: 3.10.1
+      version: 5.16.7
   interval: 5m
   values:
     server:
