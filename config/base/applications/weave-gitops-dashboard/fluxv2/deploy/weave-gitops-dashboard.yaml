@@ -38,3 +38,4 @@ spec:
     WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
     service: 
       type: "NodePort"
+    logLevel: "debug"
