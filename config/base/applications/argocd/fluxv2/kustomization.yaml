@@ -1,7 +1,0 @@
-# following this pattern as cert-manager helm chart creates its CRDs
-# https://github.com/fluxcd/flux2/discussions/1916
-# NS Generation must happen here so that flux-system can create it and generate a secret here.
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- argocd-deploy.yaml
