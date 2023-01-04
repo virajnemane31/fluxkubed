@@ -5,6 +5,7 @@ resources:
 - ../../../base/applications/argocd/fluxv2/
 - ../../../base/applications/cert-manager/fluxv2
 - ../../../base/applications/cert-manager-issuers/fluxv2
+- ../../../base/applications/weave-gitops-dashboard/fluxv2
 - flux-system/
 transformers:
 - transformers/kubed.yaml
