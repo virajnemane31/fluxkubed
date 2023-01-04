@@ -36,3 +36,4 @@ spec:
   interval: 5m0s
   values:
     WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
+    service.type: "NodePort"
