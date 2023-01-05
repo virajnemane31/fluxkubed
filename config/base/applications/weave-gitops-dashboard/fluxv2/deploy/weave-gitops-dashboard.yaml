@@ -43,3 +43,6 @@ spec:
       create: "true"
       impersonationResources: ["groups", "users"]
       impersonationResourceNames: []
+    adminUser:
+      create: "true"
+      createClusterRole: "true"
