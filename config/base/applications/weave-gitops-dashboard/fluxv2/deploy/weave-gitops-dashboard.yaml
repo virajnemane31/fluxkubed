@@ -46,3 +46,4 @@ spec:
     adminUser:
       create: "true"
       createClusterRole: "true"
+      passwordHash: "$2a$10$SkyYDqt5hV.J4NFk6zgAHOl1Q4YeqwTqJDZ/MXexCHLNQgzyzV.GG"
