@@ -40,5 +40,6 @@ spec:
       type: "NodePort"
     logLevel: "debug"
     rbac:
+      create: "true"
       impersonationResources: ["groups", "users"]
       impersonationResourceNames: []
