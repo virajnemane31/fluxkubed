@@ -45,5 +45,5 @@ spec:
       impersonationResourceNames: []
     adminUser:
       create: "true"
-      createClusterRole: "true"
+      createClusterRole: "false"
       passwordHash: "$2a$10$SkyYDqt5hV.J4NFk6zgAHOl1Q4YeqwTqJDZ/MXexCHLNQgzyzV.GG"
