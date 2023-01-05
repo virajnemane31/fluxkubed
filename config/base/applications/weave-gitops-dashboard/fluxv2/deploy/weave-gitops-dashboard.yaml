@@ -39,9 +39,8 @@ spec:
     service: 
       type: "NodePort"
      logLevel: "debug"
-    # adminUser:
-    #   create: "true"
-    #   passwordHash: "$2a$10$dmpnl78GBZ3pgBC8Ejf2IezhxdosCXoA0Gj2LP38X6xP4.j4yH7zG"
     rbac:
+      impersonationResources: ["groups"]
       impersonationResourceNames:
         - admin
+        - kubernetes-admin@kubernetes
