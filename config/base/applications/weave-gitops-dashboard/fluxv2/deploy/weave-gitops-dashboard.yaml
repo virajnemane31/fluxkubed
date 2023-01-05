@@ -39,3 +39,8 @@ spec:
     service: 
       type: "NodePort"
     logLevel: "debug"
+    rbac:
+      impersonationResources: ["groups", "users"]
+      impersonationResourceNames:
+        - admin
+        - kubernetes-admin@kubernetes
