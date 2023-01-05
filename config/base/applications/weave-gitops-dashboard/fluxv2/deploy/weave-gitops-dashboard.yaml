@@ -41,6 +41,4 @@ spec:
     logLevel: "debug"
     rbac:
       impersonationResources: ["groups", "users"]
-      impersonationResourceNames:
-        - admin
-        - kubernetes-admin
+      impersonationResourceNames: ["admin", "kubernetes-admin"]
