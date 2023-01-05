@@ -43,4 +43,4 @@ spec:
       impersonationResources: ["groups", "users"]
       impersonationResourceNames:
         - admin
-        - kubernetes-admin@kubernetes
+        - kubernetes-admin
