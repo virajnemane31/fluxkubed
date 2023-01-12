@@ -19,4 +19,4 @@ patch: |-
       patch: |-
         - op: add
           path: /spec/values/image/tag
-          value: v0.15.0-rc.1
+          value: "v0.15.0-rc.1"
