@@ -1,13 +1,22 @@
 apiVersion: builtin
 kind: PatchTransformer
 metadata:
-  name: weave-gitops
+  name: weave-gitops-dashboard-deploy
 target:
-  group: helm.toolkit.fluxcd.io
-  kind: HelmRelease
-  name: ww-gitops
+  group: kustomize.toolkit.fluxcd.io
+  kind: Kustomization
+  name: weave-gitops-dashboard-deploy
   namespace: flux-system
 patch: |-
-  - op: replace
-    path: /spec/values/image/tag
-    value: "v0.15.0-rc.1"
+  - op: add
+    path: /spec/patches/-
+    value:
+      target:
+        group: helm.toolkit.fluxcd.io
+        kind: HelmRelease
+        name: ww-gitops
+        namespace: flux-system
+      patch: |-
+        - op: add
+          path: /spec/values/image/tag
+          value: "v0.15.0-rc.1"
