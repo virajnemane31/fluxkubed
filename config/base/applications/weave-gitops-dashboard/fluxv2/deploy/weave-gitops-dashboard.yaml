@@ -48,4 +48,4 @@ spec:
       createClusterRole: "true"
       passwordHash: "$2a$10$SkyYDqt5hV.J4NFk6zgAHOl1Q4YeqwTqJDZ/MXexCHLNQgzyzV.GG"
     image:
-      tag: "v0.15.0-rc.1"
+      tag: some-version
