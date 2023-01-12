@@ -24,7 +24,7 @@
 apiVersion: builtin
 kind: PatchTransformer
 metadata:
-  name: weave-deploy
+  name: weave-gitops
 target:
   group: helm.toolkit.fluxcd.io
   kind: HelmRelease
