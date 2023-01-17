@@ -9,4 +9,4 @@ resources:
 - flux-system/
 transformers:
 - transformers/kubed.yaml
-#- transformers/weave-gitops-dashboard.yaml
+- transformers/weave-gitops-dashboard.yaml
