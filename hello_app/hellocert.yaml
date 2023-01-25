@@ -49,6 +49,7 @@ kind: Secret
 metadata:
   creationTimestamp: null
   name: jks-password-secret
+  namespace: cert-manager
 ---
 apiVersion: v1
 data:
@@ -57,3 +58,4 @@ kind: Secret
 metadata:
   creationTimestamp: null
   name: pkcs12-password-secret
+  namespace: cert-manager
