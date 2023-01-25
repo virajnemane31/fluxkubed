@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: hellogateway
+spec:
+  selector:
+    istio: ingressgateway # use istio default ingress gateway
+  servers:
+  - port:
+      number: 443
+      name: https-helloworld
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: hello-cert
+    hosts:
+    - hello.com
+  - port:
+      number: 80
+      name: http-helloworld
+      protocol: HTTP
+    hosts:
+    - hello.com
