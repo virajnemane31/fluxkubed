@@ -41,3 +41,19 @@ spec:
       passwordSecretRef: # Password used to encrypt the keystore
         key: password-key
         name: pkcs12-password-secret
+---
+apiVersion: v1
+data:
+  jks-password-secret: a3ViZXJuZXRlcw==
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: jks-password-secret
+---
+apiVersion: v1
+data:
+  jks-password-secret: a3ViZXJuZXRlcw==
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: pkcs12-password-secret
