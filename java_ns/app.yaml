@@ -24,3 +24,11 @@ spec:
         imagePullPolicy: IfNotPresent #Always
         ports:
         - containerPort: 5000
+        volumeMounts:
+        - name: certs
+          mountPath: "/etc/java/"
+          readOnly: true
+      volumes:
+      - name: certs
+        secret:
+          secretName: hello-cert
