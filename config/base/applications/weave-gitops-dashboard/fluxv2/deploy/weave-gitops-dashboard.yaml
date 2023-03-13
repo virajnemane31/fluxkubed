@@ -36,7 +36,7 @@ spec:
   interval: 5m0s
   values:
     image:
-      tag: some-version
+      tag: "some-version"
     WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
     service: 
       type: "NodePort"
